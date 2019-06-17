@@ -1,0 +1,51 @@
+﻿:root {
+    --main_color: #66BAB7;
+    --dark_color: #3F312B;
+    --accent_color: #F7D924;
+    --white_color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em;
+}
+body {
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+    font-family: "あずきフォント";
+    color: var(--dark_color);
+}
+img {
+    height: 7em;
+}
+p {
+    padding-left: 1.5em;
+}
+h2 {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+.center_justification {
+    vertical-align:middle;
+}
+.left_order {
+    display: inline-block;
+}
+
+#user_icon {
+    height: 5em;
+}
+#user_name {
+    font-size: 2em;
+}
+#enemy_icon {
+    height: 3.5em;
+    padding-left: 1.5em;
+}
+#enemy_name {
+    font-size: 1.5em;
+}
+

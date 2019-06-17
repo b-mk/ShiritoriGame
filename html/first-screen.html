@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>しりとり</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/first-screen.js"></script>
+    <script src="../bxslider-4-4.2.12/dist/jquery.bxslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bxslider-4-4.2.12/dist/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="../css/first-screen.css">
+</head>
+
+<body align="center">
+    <ul class="bxslider">
+        <li>
+            <h1>しりとりする？</h1>
+            <p class="name">右にスライドして設定を始めてね<br>GO!!!!!→</p>
+        </li>
+        <li>
+            <h1>名前を入力(10字以内)</h1>
+            <form name="form_name" id="form_name">
+                <input id="user_name" type="text" maxlength="10" value="名無しの権兵衛" autocomplete="off">
+            </form>
+        </li>
+        <li>
+            <h1>だれとしりとりする？</h1>
+            <div id="select_enemy" align="center">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <input id="enemy_1" type="radio" name="mode_num" value="0" checked>
+                            <label for="enemy_1">
+                                <img src="../images/icon_0.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="enemy_2" type="radio" name="mode_num" value="1">
+                            <label for="enemy_2">
+                                <img src="../images/icon_1.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="enemy_3" type="radio" name="mode_num" value="2">
+                            <label for="enemy_3">
+                                <img src="../images/icon_2.png">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p class="name">たまごあし</p><br><p class="mode">普通モード</p></td>
+                        <td><p class="name">ごろた</p><br><p class="mode">3文字モード</p></td>
+                        <td><p class="name">にゃんこ先生</p><br><p class="mode">IT用語モード</p></td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+        <li>
+            <h1>自分のアイコンを選ぶ</h1>
+            <div id="select_myicon" align="center">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="myicon_0" type="radio" name="my_icon" value="0" checked>
+                            <label for="myicon_0">
+                                <img src="../images/icon_0.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="myicon_1" type="radio" name="my_icon" value="1">
+                            <label for="myicon_1">
+                                <img src="../images/icon_1.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="myicon_2" type="radio" name="my_icon" value="2">
+                            <label for="myicon_2">
+                                <img src="../images/icon_2.png">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="myicon_3" type="radio" name="my_icon" value="3">
+                            <label for="myicon_3">
+                                <img src="../images/icon_3.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="myicon_4" type="radio" name="my_icon" value="4">
+                            <label for="myicon_4">
+                                <img src="../images/icon_4.png">
+                            </label>
+                        </td>
+                        <td>
+                            <input id="myicon_5" type="radio" name="my_icon" value="5">
+                            <label for="myicon_5">
+                                <img src="../images/icon_5.png">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <a onclick="transMainScreen()">スタート！</a>
+        </li>
+    </ul>
+</body>
+</html>

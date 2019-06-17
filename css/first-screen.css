@@ -1,0 +1,95 @@
+﻿:root {
+    --main_color: #66BAB7;
+    --dark_color: #3F312B;
+    --accent_color: #F7D924;
+    --white_color: white;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em;
+}
+body {
+    background-image: url(../images/background.png);
+    background-size: 100% 100%;
+    font-family: "あずきフォント";
+    z-index: 0;
+    color: var(--dark_color);
+}
+
+a {
+    color: var(--white_color);
+    background: var(--dark_color);
+    font-size: 1em;
+    width: 6em;
+    display: inline-block;
+    padding: 0.7em;
+    margin: 0em 1em 1em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+img {
+    height: 7em;
+}
+
+input {
+    font-size: 1.3em;
+    padding: 0.5em 0.5em;
+    margin: 0em 1em 1em 1em;
+    width: 60%;
+}
+
+.bx-wrapper {
+    margin: 0 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+ul.bxslider li {
+    height: 95%;
+}
+
+td {
+    padding: 0.75em;
+}
+
+a:hover {
+    color: var(--dark_color);
+    background: var(--accent_color);
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.mode {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0em;
+}
+
+#select_enemy input[type="radio"] {
+    display: none;
+}
+#select_enemy input[type="radio"]:checked + label img {
+    border-radius: 50%;
+    border: solid 7px var(--accent_color);
+}
+
+#select_myicon input[type="radio"] {
+    display: none;
+}
+#select_myicon input[type="radio"]:checked + label img {
+    border-radius: 50%;
+    border: solid 7px var(--accent_color);
+}
+.navi_btn {
+    display: none;
+}

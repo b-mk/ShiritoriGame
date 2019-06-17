@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>しりとり</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/main-screen.js"></script>
+    <script type="text/javascript" src="../js/connect-server.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main-screen.css">
+</head>
+
+<body>
+    <div id="filter"></div>
+    <div id="dialog_parent">
+        <div id="dialog">
+            <p id="dialog_message"></p>
+            <a id="dialog_button" onclick="hideDialog()">おっけい</a>
+        </div>
+    </div>
+    <h1 id="mode" class="center"></h1>
+
+    <!-- 対戦相手 -->
+    <div style="padding-left:3%">
+        <div class="left_order center_justification">
+            <img id="enemy_icon" >
+            <p id="enemy_name" class="center name"></p>
+        </div>
+        <div id="ballon_left" class="ballon center_justification">
+            <div id="enemy_kana" class="kana left">　</div>
+            <div id="enemy_word" class="word left">　</div>
+        </div>
+    </div>
+    
+    <!-- 自分 -->
+    <div align="right" style="padding-right: 3%">
+        <div id="ballon_right" class="ballon">
+                <p id="user_kana" class="kana right">　</p>
+                <p id="user_word" class="word right">　</p>
+        </div>
+        <div class="left_order center_justification">
+                <img id="user_icon">
+                <p id="user_name" class="center name"></p>
+            </div>
+    </div>
+    
+    <!-- 解答 -->
+    <p align="center" id="score">スコア：0点</p>
+    <form id="form" align="center">
+        <div>
+            <input type="text" name="input_word" maxlength="20" autocomplete="off">
+        </div>
+        <div>
+            <a id="submit_button" onclick="judgeCorrectWord()">送信</a>
+            <a onclick="finishGame(1)">ギブアップ</a>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
